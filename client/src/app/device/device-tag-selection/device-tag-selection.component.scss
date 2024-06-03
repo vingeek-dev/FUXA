@@ -3,33 +3,33 @@
         min-width: 930px;
     }
 
-    .mat-table {
+    .mat-mdc-table {
         overflow: auto;
         /* min-width: 1500px; */
         height: 100%;
     }
       
-    .mat-header-cell.mat-sort-header-sorted {
+    .mat-mdc-header-cell.mat-sort-header-sorted {
         /* color: black; */
     }
     
-    .mat-row {
+    .mat-mdc-row {
         min-height: 34px;
         height: 34px;
         border-bottom-color: rgba(0,0,0,0.06);
     }
     
-    .mat-cell {
+    .mat-mdc-cell {
         font-size: 13px;
     }
-    
+    /* TODO(mdc-migration): The following rule targets internal classes of checkbox that may no longer apply for the MDC version. */
     .mat-cell ::ng-deep .mat-checkbox-inner-container {
         height: 16px;
         width: 16px;
         margin-left: 2px;
     }
     
-    .mat-header-row {
+    .mat-mdc-header-row {
         top: 0;
         position: sticky;
         z-index: 1;
@@ -37,7 +37,7 @@
         /* background-color: rgb(30, 30, 30); */
         /* color: white; */
     }
-    .mat-header-cell {
+    .mat-mdc-header-cell {
         /* color: white; */
         font-size: 11px;
     }

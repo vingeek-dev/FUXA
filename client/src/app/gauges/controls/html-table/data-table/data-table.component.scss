@@ -1,11 +1,11 @@
-::ng-deep .mat-table {
+::ng-deep .mat-mdc-table {
     /* background-color: transparent !important; */
     height: 100%;
     overflow: auto;
     /* display: grid; */
 }
 
-.mat-header-row {
+.mat-mdc-header-row {
     top: 0;
     position: sticky;
     z-index: 1;
@@ -13,7 +13,7 @@
     padding-right: 5px;
 }
 
-.mat-row {
+.mat-mdc-row {
     padding-left: 10px;
     padding-right: 5px;
 }
@@ -68,24 +68,27 @@
     max-height: 42px;
 }
 
-::ng-deep .data-table-paginator .mat-paginator-container {
+::ng-deep .data-table-paginator .mat-mdc-paginator-container {
     min-height: unset;
     height: 42px;
 }
 
-::ng-deep .data-table-paginator .mat-paginator-container .mat-paginator-page-size {
+::ng-deep .data-table-paginator .mat-mdc-paginator-container .mat-mdc-paginator-page-size {
     height: inherit;
     margin: unset;
 }
 
-::ng-deep .data-table-paginator .mat-paginator-container .mat-paginator-page-size-select {
+/* TODO(mdc-migration): The following rule targets internal classes of paginator that may no longer apply for the MDC version. */
+::ng-deep .data-table-paginator .mat-mdc-paginator-container .mat-paginator-page-size-select {
     margin: unset;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of select that may no longer apply for the MDC version. */
 ::ng-deep .dark-theme .mat-select-value {
     color: inherit !important;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of select that may no longer apply for the MDC version. */
 ::ng-deep .mat-select-trigger,.mat-select-value {
     color: inherit !important;
 }

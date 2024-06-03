@@ -35,21 +35,21 @@
     padding: 8px 24px 0;
 }
 
-.filter .mat-form-field {
+.filter .mat-mdc-form-field {
     font-size: 14px;
     width: 100%;
 }
 
-.mat-table {
+.mat-mdc-table {
     overflow: auto;
     height: 100%;
 }
   
-.mat-header-cell.mat-sort-header-sorted {
+.mat-mdc-header-cell.mat-sort-header-sorted {
     /* color: black; */
 }
 
-.mat-header-row {
+.mat-mdc-header-row {
     top: 0;
     position: relative;
     z-index: 1;
@@ -57,10 +57,10 @@
     /* color: white; */
     min-height: 35px;
 }
-.mat-header-cell {
+.mat-mdc-header-cell {
     font-size: 14px;
 }
-.mat-row {
+.mat-mdc-row {
     min-height: 34px;
 }
 .mat-column-ontime {

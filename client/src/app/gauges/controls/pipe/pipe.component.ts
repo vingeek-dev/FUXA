@@ -15,12 +15,12 @@ export enum PipeActionsType {
 @Injectable()
 export class PipeComponent {
 
-    static TypeId = 'pipe';
-    static TypeTag = 'svg-ext-' + PipeComponent.TypeId;      // used to identify shapes type, binded with the library svgeditor
-    static LabelTag = 'Pipe';
-    static prefixB = 'PIE_';
+    public static TypeId = 'pipe';
+    public static TypeTag = 'svg-ext-' + PipeComponent.TypeId;      // used to identify shapes type, binded with the library svgeditor
+    public static LabelTag = 'Pipe';
+    public static prefixB = 'PIE_';
 
-    static actionsType = { stop: GaugeActionsType.stop, clockwise: GaugeActionsType.clockwise, anticlockwise: GaugeActionsType.anticlockwise,
+    public static actionsType = { stop: GaugeActionsType.stop, clockwise: GaugeActionsType.clockwise, anticlockwise: GaugeActionsType.anticlockwise,
                             hidecontent: PipeActionsType.hidecontent };
 
     static getSignals(pro: any) {

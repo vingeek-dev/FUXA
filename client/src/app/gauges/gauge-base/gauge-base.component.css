@@ -27,6 +27,6 @@
     border-bottom: 1px solid var(--toolboxFlyColor);
 }
 
-.mat-button {
+.mat-mdc-button {
     min-width: 60px;
 }

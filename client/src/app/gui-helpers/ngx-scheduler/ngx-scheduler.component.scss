@@ -1,5 +1,6 @@
 .container {
     min-height: 100px;
+    /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
     ::ng-deep .mat-tab-label {
         height: 34px !important;
         min-width: 120px !important;

@@ -339,7 +339,8 @@ app-root {
     width: 200px;
 }
 
-.mat-list .mat-list-item .mat-list-item-content {
+/* TODO(mdc-migration): The following rule targets internal classes of list that may no longer apply for the MDC version. */
+.mat-mdc-list .mat-mdc-list-item .mat-list-item-content {
     padding: 0px !important;
 }
 
@@ -633,31 +634,32 @@ mat-toolbar-row {
     align-items: unset !important;
 }
 
-.mat-dialog-title {
+.mat-mdc-dialog-title {
     margin: 0 0 12px !important;
     width: calc(100% - 50px);
     cursor: move;
 }
 
-.mat-raised-button {
+.mat-mdc-raised-button {
     /* padding: 2px 4px !important; */
     font-weight: 600 !important;
     line-height: 28px !important;
     font-size: 11px !important;
 }
 
-.mat-button {
+.mat-mdc-button {
     /* padding: 2px 4px !important; */
     font-weight: 600 !important;
     line-height: 28px !important;
     font-size: 11px !important;
 }
 
-.mat-tooltip {
+.mat-mdc-tooltip {
     font-size: 14px !important;
     white-space: pre-line;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of button that may no longer apply for the MDC version. */
 .mat-button-sm {
     height: 30px !important;
     width: 30px !important;
@@ -845,7 +847,7 @@ mat-toolbar-row {
     /* padding-bottom: 20px !important; */
 }
 
-.dialog-property .mat-dialog-container {
+.dialog-property .mat-mdc-dialog-container {
     padding-top: 0px;
 }
 
@@ -974,7 +976,7 @@ mat-toolbar-row {
     margin-top: 10px;
 }
 
-.light-dialog-container .mat-dialog-container {
+.light-dialog-container .mat-mdc-dialog-container {
     padding: 5px 0px  !important;
     color: unset !important;
 }

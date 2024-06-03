@@ -365,7 +365,7 @@
     flex-wrap: wrap !important;
 }
 
-::ng-deep .mat-menu-item {
+::ng-deep .mat-mdc-menu-item {
     font-size: 11px;
     height: 30px !important;
     line-height: unset !important;

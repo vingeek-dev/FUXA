@@ -46,13 +46,13 @@
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-divisions' | translate}}</span>
                             <mat-slider [disabled]="!optcfg.ticksEnabled" style="display:inline-block;" [max]="20" [min]="0" [step]="1" [thumbLabel]="true"
-                                [(ngModel)]="optcfg.renderTicks.divisions" (input)="onChangeOptionsTicks('divisions', $event.value)">
+                                [(ngModel)]="optcfg.renderTicks.divisions" #ngSlider><input matSliderThumb (input)="onChangeOptionsTicks('divisions', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-subdivisions' | translate}}</span>
                             <mat-slider [disabled]="!optcfg.ticksEnabled" style="display:inline-block;" [max]="20" [min]="0" [step]="1" [thumbLabel]="true"
-                                [(ngModel)]="optcfg.renderTicks.subDivisions" (input)="onChangeOptionsTicks('subDivisions', $event.value)">
+                                [(ngModel)]="optcfg.renderTicks.subDivisions" #ngSlider><input matSliderThumb (input)="onChangeOptionsTicks('subDivisions', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                     </div>
@@ -60,13 +60,13 @@
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-divisions-length' | translate}}</span>
                             <mat-slider [disabled]="!optcfg.ticksEnabled" style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true"
-                                [(ngModel)]="optcfg.renderTicks.divLength" (input)="onChangeOptionsTicks('divLength', $event.value)">
+                                [(ngModel)]="optcfg.renderTicks.divLength" #ngSlider><input matSliderThumb (input)="onChangeOptionsTicks('divLength', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-subdivisions-length' | translate}}</span>
                             <mat-slider [disabled]="!optcfg.ticksEnabled" style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true"
-                                [(ngModel)]="optcfg.renderTicks.subLength" (input)="onChangeOptionsTicks('subLength', $event.value)">
+                                [(ngModel)]="optcfg.renderTicks.subLength" #ngSlider><input matSliderThumb (input)="onChangeOptionsTicks('subLength', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                     </div>
@@ -74,13 +74,13 @@
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-divisions-width' | translate}}</span>
                             <mat-slider [disabled]="!optcfg.ticksEnabled" style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true"
-                                [(ngModel)]="optcfg.renderTicks.divWidth" (input)="onChangeOptionsTicks('divWidth', $event.value)">
+                                [(ngModel)]="optcfg.renderTicks.divWidth" #ngSlider><input matSliderThumb (input)="onChangeOptionsTicks('divWidth', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-subdivisions-width' | translate}}</span>
                             <mat-slider [disabled]="!optcfg.ticksEnabled" style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true"
-                                [(ngModel)]="optcfg.renderTicks.subWidth" (input)="onChangeOptionsTicks('subWidth', $event.value)">
+                                [(ngModel)]="optcfg.renderTicks.subWidth" #ngSlider><input matSliderThumb (input)="onChangeOptionsTicks('subWidth', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-divisionfont-size' | translate}}</span>
                             <mat-slider [disabled]="!optcfg.ticksEnabled" style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true"
-                                [(ngModel)]="optcfg.staticFontSize" (input)="onChangeOptionsLabels('fontSize', $event.value)">
+                                [(ngModel)]="optcfg.staticFontSize" #ngSlider><input matSliderThumb (input)="onChangeOptionsLabels('fontSize', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field color-field" style="padding-left: 12px">
@@ -129,8 +129,7 @@
                     <div class="field-row">
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-current-value' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="optcfg.maxValue" [min]="optcfg.minValue" [step]="1" [thumbLabel]="true" [(ngModel)]="gauge.value"
-                                (input)="onChangeValue($event.value)">
+                            <mat-slider style="display:inline-block;" [max]="optcfg.maxValue" [min]="optcfg.minValue" [step]="1" [thumbLabel]="true" [(ngModel)]="gauge.value" #ngSlider><input matSliderThumb (input)="onChangeValue({source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
@@ -145,62 +144,53 @@
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-bar-width' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="70" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.lineWidth"
-                                (input)="onChangeOptions('lineWidth', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="70" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.lineWidth" #ngSlider><input matSliderThumb (input)="onChangeOptions('lineWidth', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                     </div>
                     <div class="field-row">
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-animation-speed' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="128" [min]="1" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.animationSpeed"
-                                (input)="onChangeOptions('animationSpeed', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="128" [min]="1" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.animationSpeed" #ngSlider><input matSliderThumb (input)="onChangeOptions('animationSpeed', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-angle' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="50" [min]="-50" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.angle"
-                                (input)="onChangeOptions('angle', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="50" [min]="-50" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.angle" #ngSlider><input matSliderThumb (input)="onChangeOptions('angle', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-radius' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="100" [min]="50" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.radiusScale"
-                                (input)="onChangeOptions('radiusScale', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="100" [min]="50" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.radiusScale" #ngSlider><input matSliderThumb (input)="onChangeOptions('radiusScale', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                     </div>
                     <div class="field-row">
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-font-size' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.fontSize"
-                                (input)="onChangeOptions('fontSize', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.fontSize" #ngSlider><input matSliderThumb (input)="onChangeOptions('fontSize', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-textfield-position' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.textFilePosition"
-                                (input)="onChangeOptions('textFilePosition', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.textFilePosition" #ngSlider><input matSliderThumb (input)="onChangeOptions('textFilePosition', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-format-digits' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="5" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.fractionDigits"
-                                (input)="onChangeOptions('fractionDigits', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="5" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.fractionDigits" #ngSlider><input matSliderThumb (input)="onChangeOptions('fractionDigits', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                     </div>
                     <div class="field-row">
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-pointer-length' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.pointer.length"
-                                (input)="onChangeOptionsPointer('pointerLength', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="100" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.pointer.length" #ngSlider><input matSliderThumb (input)="onChangeOptionsPointer('pointerLength', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field" style="padding-left: 12px">
                             <span>{{'bag.property-pointer-stroke' | translate}}</span>
-                            <mat-slider style="display:inline-block;" [max]="300" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.pointer.strokeWidth"
-                                (input)="onChangeOptionsPointer('pointerStrokeWidth', $event.value)">
+                            <mat-slider style="display:inline-block;" [max]="300" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="optcfg.pointer.strokeWidth" #ngSlider><input matSliderThumb (input)="onChangeOptionsPointer('pointerStrokeWidth', {source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}.value)" #ngSliderThumb="matSliderThumb" />
                             </mat-slider>
                         </div>
                         <div class="my-form-field slider-field color-field" style="padding-left: 12px">

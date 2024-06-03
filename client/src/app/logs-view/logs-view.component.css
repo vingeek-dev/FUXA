@@ -32,22 +32,22 @@
     font-size: 12px;
 }
 
-.mat-row {
+.mat-mdc-row {
     min-height: 34px;
     height: 34px;
     border-bottom-color: rgba(0, 0, 0, 0.06);
 }
 
-.mat-cell {
+.mat-mdc-cell {
     font-size: 13px;
 }
 
-.mat-header-row {
+.mat-mdc-header-row {
     top: 0;
     position: sticky;
     z-index: 1;
 }
-.mat-header-cell {
+.mat-mdc-header-cell {
     font-size: 13px;
 }
 

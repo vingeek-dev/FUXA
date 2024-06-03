@@ -18,11 +18,11 @@ export class ProcEngComponent extends GaugeBaseComponent {
 
     @Input() data: any;
 
-    static TypeId = 'proceng';
-    static TypeTag = 'svg-ext-' + ProcEngComponent.TypeId;
-    static LabelTag = 'Proc-Eng';
+    public static TypeId = 'proceng';
+    public static TypeTag = 'svg-ext-' + ProcEngComponent.TypeId;
+    public static LabelTag = 'Proc-Eng';
 
-    static actionsType = { hide: GaugeActionsType.hide, show: GaugeActionsType.show, blink: GaugeActionsType.blink, stop: GaugeActionsType.stop,
+    public static actionsType = { hide: GaugeActionsType.hide, show: GaugeActionsType.show, blink: GaugeActionsType.blink, stop: GaugeActionsType.stop,
                         clockwise: GaugeActionsType.clockwise, anticlockwise: GaugeActionsType.anticlockwise, rotate : GaugeActionsType.rotate,
                         move: GaugeActionsType.move };
     constructor() {

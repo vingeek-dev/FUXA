@@ -12,11 +12,11 @@ declare var SVG: any;
 })
 export class ShapesComponent extends GaugeBaseComponent {
 
-    static TypeId = 'shapes';                                   // Standard shapes (General, Shapes)
-    static TypeTag = 'svg-ext-' + ShapesComponent.TypeId;       // used to identify shapes type, binded with the library svgeditor
-    static LabelTag = 'Shapes';
+    public static TypeId = 'shapes';                                   // Standard shapes (General, Shapes)
+    public static TypeTag = 'svg-ext-' + ShapesComponent.TypeId;       // used to identify shapes type, binded with the library svgeditor
+    public static LabelTag = 'Shapes';
 
-    static actionsType = { hide: GaugeActionsType.hide, show: GaugeActionsType.show, blink: GaugeActionsType.blink, stop: GaugeActionsType.stop,
+    public static actionsType = { hide: GaugeActionsType.hide, show: GaugeActionsType.show, blink: GaugeActionsType.blink, stop: GaugeActionsType.stop,
                         clockwise: GaugeActionsType.clockwise, anticlockwise: GaugeActionsType.anticlockwise, rotate : GaugeActionsType.rotate,
                         move: GaugeActionsType.move };
 

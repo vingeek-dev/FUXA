@@ -26,7 +26,7 @@
     padding: 8px 24px 0;
 }
 
-.filter .mat-form-field {
+.filter .mat-mdc-form-field {
     font-size: 14px;
     width: 100%;
 }
@@ -35,25 +35,25 @@
     height: 705px;
 }
 
-.mat-table {
+.mat-mdc-table {
     overflow: auto;
     min-width: 1560px;
     /* margin: 5px; */
     /* max-height: 500px; */
 }
   
-.mat-header-cell.mat-sort-header-sorted {
+.mat-mdc-header-cell.mat-sort-header-sorted {
     color: black;
 }
 
-.mat-header-row {
+.mat-mdc-header-row {
     top: 0;
     position: sticky;
     z-index: 1;
     background-color: rgba(76,76,76,1);
     color: white;
 }
-.mat-header-cell {
+.mat-mdc-header-cell {
     color: white;
     font-size: 14px;
 }

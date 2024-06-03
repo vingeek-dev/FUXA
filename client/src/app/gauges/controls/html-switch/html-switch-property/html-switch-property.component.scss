@@ -37,10 +37,12 @@
     height: 29px;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of slider that may no longer apply for the MDC version.*/
 .slider-small > .mat-slider-horizontal {
     min-width: 80px;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
 ::ng-deep .mat-tab-label {
     height: 34px !important;
 }

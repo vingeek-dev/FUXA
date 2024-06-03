@@ -15,33 +15,33 @@
     padding: 8px 24px 0;
 }
 
-.filter .mat-form-field {
+.filter .mat-mdc-form-field {
     font-size: 14px;
     width: 100%;
 }
 
-.mat-table {
+.mat-mdc-table {
     overflow: auto;
     /* min-width: 1500px; */
     height: 100%;
 }
 
-.mat-row {
+.mat-mdc-row {
     min-height: 40px;
     height: 43px;
 }
 
-.mat-cell {
+.mat-mdc-cell {
     font-size: 13px;
 }
 
-.mat-header-row {
+.mat-mdc-header-row {
     top: 0;
     position: sticky;
     z-index: 1;
 }
 
-.mat-header-cell {
+.mat-mdc-header-cell {
     font-size: 15px;
 }
 

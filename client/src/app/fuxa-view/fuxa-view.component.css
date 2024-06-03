@@ -85,7 +85,7 @@
 }
 
 /* Modal Content/Box */
-::ng-deep .fuxa-dialog-property .mat-dialog-container {
+::ng-deep .fuxa-dialog-property .mat-mdc-dialog-container {
     padding: 0;
 }
 

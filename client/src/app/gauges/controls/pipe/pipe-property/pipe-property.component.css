@@ -37,15 +37,17 @@
     margin-bottom: 5px;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 ::ng-deep .input-text .mat-form-field-infix {
     padding-top: 5px;
     padding-bottom: 0px;
 }
 
-::ng-deep .mat-dialog-container {
+::ng-deep .mat-mdc-dialog-container {
     display: inline-table !important;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
 ::ng-deep .mat-tab-label {
     height: 34px !important;
 }
