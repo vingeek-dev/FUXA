@@ -27,7 +27,7 @@
         <div *ngIf="data.type === cardViewType">
             <div class="my-form-field slider-field" style="margin-top: 10px">
                 <span>{{'dlg.docproperty-margin' | translate}}</span>
-                <mat-slider style="display:inline-block;width: 100px;" [max]="20" [min]="0" [step]="1" [thumbLabel]="true" [(ngModel)]="data.profile.margin"><input matSliderThumb />
+                <mat-slider style="display:inline-block;width: 100px;" [max]="20" [min]="0" [step]="1" [discrete]="true" [(ngModel)]="data.profile.margin"><input matSliderThumb />
                 </mat-slider>
             </div>
         </div>
