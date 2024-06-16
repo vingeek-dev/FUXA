@@ -407,7 +407,7 @@ export class ProjectService {
     }
 
     getChart(id: string) {
-        for (let i = 0; i < this.projectData.charts.length; i++) {
+        for (let i = 0; i < this.projectData?.charts?.length; i++) {
             if (this.projectData.charts[i].id === id) {
                 return this.projectData.charts[i];
             }
